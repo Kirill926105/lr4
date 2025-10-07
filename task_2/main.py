@@ -1,4 +1,4 @@
-a = [1, 2, 3, 4, 5] # kirill kulbitskiy, начальный список
-b = [x**2 for x in a] # список квадратов
+a = input().split() # kirill kulbitskiy, начальный список
+b = [int (x)**2 for x in a] # список квадратов
 print('Начальный список: ', a) # выводим списки
 print('Список квадратов: ', b)
