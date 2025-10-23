@@ -1,7 +1,17 @@
-a = input('Числа через пробел: ')
-b = [int(x) for x in a.split()]
-total = 0
-for num in b:
-    total += num
-print('Введенные числа: ', b)
-print('Сумма всех чисел: ', total)
+numbers = [] # kirill kulbitskiy, ввод чисел в список
+print("Введи числа: ")
+
+while True: # цикл для ввода чисел
+    n = input()
+    if n == "": # нажать Enter после ввода числа для окончания списка
+        break
+    numbers.append(int(n))
+
+# Считаем сумму
+sum = 0
+for x in numbers:
+    sum = sum + x
+
+# Выводим результаты
+print("Твои числа:", numbers)
+print("Сумма чисел:", sum)
